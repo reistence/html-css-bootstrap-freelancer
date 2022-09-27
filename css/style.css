@@ -1,4 +1,7 @@
 /* COMMON */
+html {
+  /* font-size: 100%; */
+}
 img {
   max-width: 100%;
 }
@@ -9,4 +12,28 @@ a {
 ul {
   list-style: none;
   list-style-position: inside;
+}
+
+header {
+  background-color: #2c3e51;
+  color: white;
+  height: 90px;
+}
+.main-tlt {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.main-menu {
+}
+.hamburger-menu {
+  border: 1px solid white;
+  border-radius: 10px;
+}
+.hamburger-menu i {
+  font-size: 2rem;
+  color: grey;
+}
+.desktop-menu {
+  /* width: 400px; */
+  font-size: 1rem;
 }
