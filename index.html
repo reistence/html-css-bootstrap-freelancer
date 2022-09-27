@@ -24,6 +24,7 @@
     />
   </head>
   <body>
+    <!-- HEADER -->
     <header>
       <div class="container">
         <div class="d-flex justify-content-between align-items-center py-4">
@@ -42,7 +43,11 @@
         </div>
       </div>
     </header>
+    <!--/ HEADER -->
+    <!-- MAIN -->
+
     <main>
+      <!-- JUMBOTRON -->
       <section id="jumbotron" class="text-white mb-5">
         <div class="container">
           <div class="d-flex flex-column align-items-center g-2">
@@ -50,7 +55,9 @@
               <img src="img/avatar.svg" alt="Avatar" />
             </div>
             <h1>START BOOTSTRAP</h1>
-            <i id="star" class="fa-solid fa-star"></i>
+            <div class="star text-center mb-3">
+              <i class="fa-solid fa-star"></i>
+            </div>
             <ul class="features d-flex justify-content-around mx-auto">
               <li>GRAPHIC ARTIST</li>
               <li>WEB DESIGNER</li>
@@ -59,10 +66,15 @@
           </div>
         </div>
       </section>
+      <!-- /JUMBOTRON -->
+
+      <!-- SECTION PORTFOLIO -->
       <section id="portfolio" class="mb-5">
         <div class="container">
           <h2 class="text-center">PORTFOLIO</h2>
-          <i id="star" class="fa-solid fa-star"></i>
+          <div class="star-black text-center mb-3">
+            <i id="star" class="fa-solid fa-star"></i>
+          </div>
           <div class="row g-3">
             <div class="col-12 col-md-6 col-lg-4">
               <img src="img/cabin.png" alt="" />
@@ -85,10 +97,16 @@
           </div>
         </div>
       </section>
+      <!-- /SECTION PORTFOLIO -->
+
+      <!-- SECTION ABOUT -->
+
       <section id="about" class="mb-4 text-white">
         <div class="wrapper p-5">
           <h2 class="text-center">ABOUT</h2>
-          <i id="star" class="fa-solid fa-star"></i>
+          <div class="star text-center mb-3">
+            <i class="fa-solid fa-star"></i>
+          </div>
           <div class="row g-2">
             <div class="col-12 col-md-6">
               Freelancer is a free bootstrap theme created by Start Bootstrap.
@@ -111,10 +129,15 @@
           </div>
         </div>
       </section>
+      <!-- /SECTION ABOUT -->
+
+      <!-- SECTION CONTACT -->
       <section id="contact">
         <div class="container">
           <h2 class="text-center">CONTACT ME</h2>
-          <i id="star" class="fa-solid fa-star"></i>
+          <div class="star-black text-center-mb-3">
+            <i id="star" class="fa-solid fa-star"></i>
+          </div>
           <form action="">
             <div class="mb-3">
               <input type="name" class="form-control" placeholder="Name" />
@@ -135,7 +158,7 @@
             </div>
             <div class="mb-3">
               <textarea
-                class="form-control"
+                class="form-control border-top"
                 rows="5"
                 placeholder="Message"
               ></textarea>
@@ -143,11 +166,15 @@
           </form>
         </div>
       </section>
+      <!-- /SECTION CONTACT -->
     </main>
+    <!-- /MAIN -->
+
+    <!-- FOOTER -->
     <footer class="text-white">
       <div class="upper-footer">
         <div class="container">
-          <div class="row g-2 p-2">
+          <div class="row g-2 p-7">
             <div class="col-12 col-md-4 text-center">
               <h4>LOCATION</h4>
               <p>2215 John Daniel Drive Clark, MO 54243</p>
@@ -177,5 +204,6 @@
         <p>Copyright &#169; Your Website 2019</p>
       </div>
     </footer>
+    <!-- /FOOTER -->
   </body>
 </html>
