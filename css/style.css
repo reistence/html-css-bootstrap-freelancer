@@ -15,12 +15,32 @@ ul {
   margin-bottom: 0;
   padding-left: 0;
 }
+
+.btn {
+  background-color: #1abd9d;
+}
 /* HEADER */
 header {
   background-color: #2c3e51;
   color: white;
-  height: 90px;
+  /* height: 90px; */
 }
+.navbar-brand {
+  color: white;
+}
+nav .navbar-toggler {
+  color: white;
+  border: 1px solid white;
+}
+
+nav .nav-link {
+  color: white;
+}
+.navbar-nav .nav-link.active {
+  color: white;
+}
+
+/* CLASSIC NAV 
 .main-tlt {
   font-size: 1.5rem;
   font-weight: bold;
@@ -37,7 +57,7 @@ header {
   flex-grow: 0.2;
   font-size: 1rem;
   margin-bottom: 0;
-}
+} */
 /* JUMBOTRON */
 #jumbotron {
   background-color: #1abd9d;
@@ -51,7 +71,8 @@ header {
 
 .star {
   position: relative;
-  width: 100%;
+  width: 5em;
+  margin: 0 auto;
 }
 .star i {
   font-size: 2rem;
@@ -61,26 +82,27 @@ header {
   content: "";
   display: block;
   position: absolute;
-  left: 30%;
+  left: -5em;
   width: 100px;
   bottom: 40%;
-  z-index: 999;
+
   border-bottom: 4px solid #fff;
 }
 .star::after {
   content: "";
   display: block;
   position: absolute;
-  right: 30%;
+  right: -5em;
   width: 100px;
   bottom: 40%;
-  z-index: 999;
+
   border-bottom: 4px solid #fff;
 }
 .star-black {
-  position: relative;
-  width: 100%;
+  width: 5em;
+  margin: 0 auto;
   text-align: center;
+  position: relative;
 }
 .star-black i {
   color: #2c3e51;
@@ -91,7 +113,7 @@ header {
   content: "";
   display: block;
   position: absolute;
-  left: 30%;
+  left: -5em;
   width: 100px;
   bottom: 40%;
   z-index: 999;
@@ -101,7 +123,7 @@ header {
   content: "";
   display: block;
   position: absolute;
-  right: 30%;
+  right: -5em;
   width: 100px;
   bottom: 40%;
   z-index: 999;
@@ -122,10 +144,14 @@ header {
 }
 .download {
   margin: 0 auto;
-  width: 8em;
-  border: 1px solid white;
+  text-align: center;
   padding: 0.2em 1em;
   border-radius: 5px;
+}
+.download .btn {
+  border: 1px solid white;
+  display: inline-block;
+  color: white;
 }
 /* SECTION - CONTACT */
 #contact form input {
@@ -134,6 +160,7 @@ header {
   border-left: 0;
   border-right: 0;
   border-radius: 0;
+  box-shadow: none;
 }
 #contact form input[type="number"] {
   border-bottom: 0;
@@ -142,6 +169,7 @@ header {
   border-top: 0;
   border-left: 0;
   border-right: 0;
+  box-shadow: none;
 }
 
 /* FOOTER */
@@ -154,17 +182,25 @@ header {
 .upper-footer p {
   font-size: 0.8rem;
 }
+.around-icons {
+  width: 40%;
+  margin: 0 auto;
+}
 .around-icons i {
   font-size: 0.8rem;
-  /* padding: 0.6em;
-  border: 1px solid white;
-  border-radius: 50%; */
+  vertical-align: middle;
+  line-height: 2rem;
 }
 .around-icons li {
   border: 1px solid white;
-  padding: 0.7em 1em;
+  width: 2em;
+  height: 2em;
+
   border-radius: 50%;
   line-height: normal;
+}
+#start {
+  color: #1abd9d;
 }
 
 .lower-footer {
@@ -174,8 +210,10 @@ header {
   font-size: 0.7rem;
 }
 
-/* @media screen and (min-width: 992px) {
-  .wrapper {
-    width: 50%;
+@media screen and (min-width: 768px) {
+  /* FOOTER */
+  .around-icons {
+    width: 70%;
+    margin: 0 auto;
   }
-} */
+}
